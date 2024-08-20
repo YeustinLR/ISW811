@@ -1,0 +1,62 @@
+/* Estilos para el NavBar */
+nav {
+    background-color: #333;
+    padding: 1rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el título */
+nav h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Estilo base para los botones */
+nav button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    margin-left: 0.5rem; /* Añade un margen entre los botones */
+}
+
+/* Estilo específico para el botón de Logout */
+nav button.logout {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+nav button.logout:hover {
+    background-color: #c0392b;
+}
+
+/* Estilo específico para los botones de 2FA */
+nav button.twofa {
+    background-color: #7f8c8d;
+    color: #e9e5e5;
+}
+
+nav button.twofa:hover {
+    background-color: #777472;
+}
+/* Media Queries para Pantallas Muy Pequeñas (por ejemplo, móviles en retrato) */
+@media (max-width: 480px) {
+    nav {
+        padding: 0.5rem; /* Reduce el padding en pantallas muy pequeñas */
+    }
+
+    nav h2 {
+        font-size: 1.1rem; /* Reduce el tamaño del texto en pantallas muy pequeñas */
+    }
+
+    nav button {
+        padding: 0.5rem; /* Reduce el padding en los botones para pantallas muy pequeñas */
+        font-size: 0.8rem; /* Reduce el tamaño de la fuente en los botones */
+    }
+}

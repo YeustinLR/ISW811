@@ -1,0 +1,36 @@
+/* src/styles/Setup2FA.css */
+.setup-2fa-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .qr-code-section {
+    margin-top: 20px;
+  }
+  
+  .qr-code-img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .qr-code-section p {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    cursor: not-allowed;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  

@@ -1,0 +1,63 @@
+.submenu-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+}
+
+.submenu-container {
+    text-align: center;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.submenu-container h1 {
+    font-size: 1.8rem;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.apps {
+    display: flex;
+    justify-content: space-around;
+}
+
+.app-card {
+    background-color: #f9f9f9;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.app-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.twitter-icon {
+    color: #1DA1F2;
+}
+
+.facebook-icon {
+    color: #4267B2;
+}
+
+.app-card span {
+    display: block;
+    font-size: 1.1rem;
+    color: #555555;
+}
