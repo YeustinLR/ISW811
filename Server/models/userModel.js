@@ -34,7 +34,7 @@ const getUserById = async (id) => {
 
 // Obtener un usuario por email
 const getUserByEmail = async (email) => {
-    const rows = await executeQuery('SELECT id, nombre, apellido, email, password FROM users WHERE email = ?', [email]);
+    const rows = await executeQuery('SELECT id, nombre, apellido, email, password, twoFA FROM users WHERE email = ?', [email]);
     return rows[0];
 };
 

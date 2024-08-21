@@ -4,7 +4,7 @@ const router = express.Router();
 const userController = require('../controllers/userController');
 const { registerValidations, loginValidations } = require('../validations/userValidation');
 const { validateRequest } = require('../middlewares/validateRequest');
-const { authenticateToken } = require('../middlewares/authMiddleware');
+const { authenticateToken, authenticateTokenTemp } = require('../middlewares/authMiddleware');
 
 
 // Ruta para registrar un nuevo usuario
@@ -30,7 +30,7 @@ router.get('/profile', authenticateToken, (req, res) => {
 router.get('/2fa/setup', authenticateToken, userController.generate2FAQRCode);
 
 // Ruta para verificar el código OTP ingresado
-router.post('/2fa/verify', authenticateToken, userController.verify2FACode);
+router.post('/2fa/verify', authenticateTokenTemp, userController.verify2FACode);
 
 
 
