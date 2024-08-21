@@ -23,7 +23,7 @@ Esta es una API RESTful desarrollada con Node.js, Express y MySQL. La API permit
 1. **Clona el repositorio**
 
    ```bash
-   git clone https://github.com/tu-usuario/tu-repo.git
+   git clone https://github.com/YeustinLR/ISW811.git
 Instala las dependencias
 
 2. **Navega al directorio del proyecto e instala las dependencias usando npm:**
